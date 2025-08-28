@@ -90,3 +90,90 @@ function getTime() {
     const time = h + ":" + m + ":" + s + ' ' + ampm;
     return time;
 }
+
+
+// card 1
+document.getElementById('national-call-btn').addEventListener('click', function () { 
+    availAbleCoin('available-coin')
+    // update call history
+    const title = document.getElementById('national-title').innerText;
+    const number = document.getElementById('national-Service-number').innerText;
+    updateCallHistory(title, number)
+})
+
+
+// car 2
+document.getElementById('police-call-btn').addEventListener('click', function () {
+    availAbleCoin('available-coin')
+    // update call history here
+    const title = document.getElementById('police-title').innerText;
+    const number = document.getElementById('police-service-number').innerText;
+    updateCallHistory(title, number)
+})
+
+// card 3
+document.getElementById('fire-call-btn').addEventListener('click', function () { 
+    availAbleCoin('available-coin')
+    // update call history
+    const title = document.getElementById('fire-title').innerText;
+    const number = document.getElementById('fire-Service-number').innerText;
+    updateCallHistory(title, number)
+})
+
+
+// card 4
+document.getElementById('ambulance-call-btn').addEventListener('click', function () { 
+    availAbleCoin('available-coin')
+    // update call history
+    const title = document.getElementById('ambulance-title').innerText;
+    const number = document.getElementById('ambulance-Service-number').innerText;
+    updateCallHistory(title, number)
+})
+
+// card 5
+document.getElementById('womanchild-call-btn').addEventListener('click', function () { 
+    availAbleCoin('available-coin')
+    // update call history
+    const title = document.getElementById('womanchild-title').innerText;
+    const number = document.getElementById('womanchild-Service-number').innerText;
+    updateCallHistory(title, number)
+})
+
+// card 6
+document.getElementById('corruption-call-btn').addEventListener('click', function () { 
+    availAbleCoin('available-coin')
+    // update call history
+    const title = document.getElementById('corruption-title').innerText;
+    const number = document.getElementById('corruption-Service-number').innerText;
+    updateCallHistory(title, number)
+})
+
+
+// card 7
+document.getElementById('Electricity-call-btn').addEventListener('click', function () { 
+    availAbleCoin('available-coin')
+    // update call history
+    const title = document.getElementById('Electricity-title').innerText;
+    const number = document.getElementById('Electricity-Service-number').innerText;
+    updateCallHistory(title, number)
+})
+
+
+// card 8
+document.getElementById('brack-call-btn').addEventListener('click', function () { 
+    availAbleCoin('available-coin')
+    // update call history
+    const title = document.getElementById('brack-title').innerText;
+    const number = document.getElementById('brack-Service-number').innerText;
+    updateCallHistory(title, number)
+})
+
+// card 9
+document.getElementById('railway-call-btn').addEventListener('click', function () { 
+    availAbleCoin('available-coin')
+    // update call history
+    const title = document.getElementById('railway-title').innerText;
+    const number = document.getElementById('railway-Service-number').innerText;
+    updateCallHistory(title, number)
+})
+
