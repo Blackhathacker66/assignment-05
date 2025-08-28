@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Contact Service</title>
-     <!-- tailwind cdn -->
+    <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- daisy UI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -13,8 +14,9 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-     <header class="w-full">
+    <header class="w-full">
         <div class="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-10 py-3 sm:py-5">
             <div class="flex flex-row sm:flex-row sm:justify-start items-center">
                 <img class="w-15 h-15 md:w-20 md:h-20 mr-4" src="./assets/logo.png" alt="">
@@ -42,5 +44,54 @@
             </div>
         </div>
     </header>
+
+    <main>
+        <!-- Hero section  -->
+        <section class=" w-full h-auto md:h-[239px] [background:linear-gradient(to_right,#013223,#006747,#013223)] p-5
+        md:pt-5">
+            <div>
+                <img class="w-24 h-24 mx-auto" src="./assets/logo-dark.png" alt="">
+                <h1 class="text-[2.5rem] text-white text-center font-bold">Emergency Service Directory</h1>
+                <p class="text-center font-semibold text-[20px] text-white">Government Emergency Services at Your
+                    Fingertip
+                    – A
+                    Project by Government of the People's Republic of Bangladesh</p>
+            </div>
+        </section>
+
+        <section class="bg-[#F5FFF6]">
+            <div class="card-container grid grid-cols-1 md:grid-cols-4 gap-4 p-4 sm:p-10 ">
+                <!-- Left side [cards] -->
+                <div class="col-span-1  md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-4 ">
+
+
+                    <!-- card 1 -->
+                    <div
+                        class="max-w-lg max-h-[360px] p-5 rounded-xl bg-white  shadow-lg flex flex-col justify-center items-start">
+                        <div class=" w-full flex justify-between items-center">
+                            <img class="w-12 h-12" src="./assets/emergency.png" alt="">
+                            <span class="heart"><i class="fa-regular fa-heart text-[30px] cursor-pointer"></i></span>
+                        </div>
+                        <div class="my-3">
+                            <h1 id="national-title" class="font-bold text-[20px] ">National Emergency Number</h1>
+                            <p class="text-[#5C5C5C] text-lg">National Emergency</p>
+                        </div>
+                        <div>
+                            <h1 id="national-Service-number" class="font-bold text-[2rem] mb-2">999</h1>
+                            <p class=" w-20 text-center p-3 rounded-full bg-[#F2F2F2]">All</p>
+                        </div>
+                        <div class=" w-full grid grid-cols-2 gap-2 justify-between mt-5">
+                            <button id="national-number-copy"
+                                class="border border-[#5C5C5C] p-2 cursor-pointer rounded-lg text-[#5C5C5C] text-[20px]">
+                                <span><i class="fa-regular fa-copy"></i></span> Copy</button>
+                            <button id="national-call-btn"
+                                class=" p-2 cursor-pointer rounded-lg bg-green-500 text-white text-[20px]"> <span><i
+                                        class="fa-solid fa-phone"></i></span> Call</button>
+                        </div>
+                    </div>
+                    <!-- card 1 end here -->
+        </section>
+    </main>
 </body>
+
 </html>
