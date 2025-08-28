@@ -34,3 +34,59 @@ function updateCallHistory(title, number) {
     const historyContainer = document.getElementById('history-container');
     historyContainer.appendChild(newCard);
 }
+
+// copy button feature
+function copyNumber(id){
+        const number = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(number)
+        .then(() => {
+            alert("Number Copied Successfully: " + number)
+        }).catch(err => {
+            console.error("Copy failed: ", err);
+        })
+
+    // copy-count
+    const copyCount = document.getElementById('copy-count').innerText;
+    const copyCountNumber = parseInt(copyCount)
+    let copyCountIncrese = copyCountNumber;
+    copyCountIncrese++
+    document.getElementById('copy-count').innerText = copyCountIncrese;
+}
+
+// all card heart function here
+const hearts = document.getElementsByClassName('heart');
+for(const heart of hearts){
+    heart.addEventListener('click', function(){
+        const heartCount = document.getElementById('heart-count').innerText;
+        let heartCountNumber = parseInt(heartCount);
+        heartCountNumber++;
+        document.getElementById('heart-count').innerText = heartCountNumber;
+    })
+}
+
+// clear log history 
+document.getElementById('clear-log-btn').addEventListener('click', function () {
+    // console.log('clear button clicked')
+    document.getElementById('history-container').innerHTML = '';
+})
+
+
+// time function
+function getTime() {
+    let h = new Date().getHours();
+    let m = new Date().getMinutes();
+    let s = new Date().getSeconds();
+
+    // am/pm check
+    let ampm;
+    if (h >= 12) { ampm = 'PM'; } else { ampm = 'AM'; }
+
+    // minutes check
+    if (m < 10) { m = "0" + m; } else { m = m.toString(); }
+
+    // second check
+    if (s < 10) { s = "0" + s; } else { s = s.toString(); }
+
+    const time = h + ":" + m + ":" + s + ' ' + ampm;
+    return time;
+}
