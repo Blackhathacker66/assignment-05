@@ -177,3 +177,48 @@ document.getElementById('railway-call-btn').addEventListener('click', function (
     updateCallHistory(title, number)
 })
 
+
+//card 1 copy button
+document.getElementById('national-number-copy').addEventListener('click', function () {
+        copyNumber('national-Service-number')
+})
+
+// card 2 copy button
+document.getElementById('police-number-copy').addEventListener('click', function () {
+        copyNumber('police-service-number')
+})
+
+//card 3 copy button
+document.getElementById('fire-number-copy').addEventListener('click', function () {
+        copyNumber('fire-Service-number')
+})
+
+//card 4 copy button
+document.getElementById('ambulance-number-copy').addEventListener('click', function () {
+        copyNumber('ambulance-Service-number')
+})
+
+//card 5 copy button
+document.getElementById('womanchild-number-copy').addEventListener('click', function () {
+        copyNumber('womanchild-Service-number')
+})
+
+//card 6 copy button
+document.getElementById('corruption-number-copy').addEventListener('click', function () {
+        copyNumber('corruption-Service-number')
+})
+
+//card 7 copy button
+document.getElementById('Electricity-number-copy').addEventListener('click', function () {
+        copyNumber('Electricity-Service-number')
+})
+
+//card 8 copy button
+document.getElementById('brack-number-copy').addEventListener('click', function () {
+        copyNumber('brack-Service-number')
+})
+
+//card 9 copy button
+document.getElementById('railway-number-copy').addEventListener('click', function () {
+        copyNumber('railway-Service-number')
+})
